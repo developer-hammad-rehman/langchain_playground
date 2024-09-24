@@ -3,8 +3,11 @@ from langchain_google_genai import ChatGoogleGenerativeAI  # Import the Google G
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage  # Import message types for system, human, and AI communication
 from dotenv import load_dotenv  # Import dotenv to load environment variables from .env file
 
+
 # Load environment variables (e.g., API keys, configuration settings) from the .env file
 load_dotenv()
+
+
 
 # Initialize chat history as an empty list to store a sequence of messages (System, Human, and AI messages)
 chathistory: list[SystemMessage, AIMessage, HumanMessage] = []
@@ -43,4 +46,3 @@ while True:
         chathistory.append(response)
 
 # Once the loop is exited, print the entire chat history (for debugging or review purposes)
-print(chathistory)

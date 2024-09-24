@@ -15,8 +15,12 @@ psycopg = "^3.2.2"
 psycopg-binary = "^3.2.2"
 langchain-ollama = "^0.2.0"
 pypdf = "^5.0.0"
-chromadb = "^0.5.5"
+bs4 = "^0.0.2"
+langchain-postgres = "^0.0.12"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]

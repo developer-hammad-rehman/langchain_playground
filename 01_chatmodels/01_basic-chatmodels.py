@@ -1,7 +1,7 @@
 # Import necessary modules
 from dotenv import load_dotenv  # To load environment variables from a .env file
 from langchain_google_genai import ChatGoogleGenerativeAI  # Import the Google Generative AI model
-from langchain.tools import tool  # Potential future use of tools (currently unused)
+
 
 # Load environment variables from a .env file (this might include API keys, etc.)
 load_dotenv()
